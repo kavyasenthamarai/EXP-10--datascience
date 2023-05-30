@@ -1,19 +1,31 @@
 # EXP-10--datascience
 
 # AIM :
+
  To Perform Data Science Process on a complex dataset and save the data to a file.
+ 
 # ALGORITHM :
-##STEP 1:
+
+## STEP 1:
+
   Read the given Data
-##STEP 2:
+  
+## STEP 2:
+
   Clean the Data Set using Data Cleaning Process 
-##STEP 3:
+  
+## STEP 3:
+
   Apply Feature Generation/Feature Selection Techniques on the data set 
-##STEP 4:  
+  
+## STEP 4: 
+
   Apply EDA /Data visualization techniques to all the features of the data set
-  Program:
+
 # Program:
+
 Developed by : k.kavya
+
 Register number : 212222230065
 ```
 import numpy as np 
@@ -82,3 +94,25 @@ sns.catplot(data=df_automobile, x="num-of-cylinders", y="horsepower",kind="violi
 sns.catplot(data=df_automobile, y="normalized-losses", x="symboling" , hue="body-style" ,kind="point")
 ```
 # Output:
+## DATA CLEANING
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/b4d7bd50-e0c7-4f02-b799-995272416696)
+## Missing Data
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/e7b786a1-800e-4276-8947-2670331b1e97)
+
+## Summary statistics of variable
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/08bbec0f-960b-49e3-8640-204c03af1e15)
+## Univariate Analysis
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/caf22b08-3eb1-408b-8aa0-9416e46cf059)
+
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/3ed30a42-690d-45c3-9055-32e0b09f8661)
+## Bivariate Analysis
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/419b9f18-7285-4d68-afae-9322ab36cefd)
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/2c4c36e6-2f9f-417c-891a-7518d35f972b)
+## violin plot
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/29a414e6-ad08-499c-811b-abc86d306185)
+## Normalized-losses
+![image](https://github.com/kavyasenthamarai/EXP-10--datascience/assets/118668727/3a68382f-8f2a-4752-b251-05848e04f344)
+
+# RESULT
+Thus, we have read the given data and Performed Data Science Process on a complex dataset 
+
