@@ -37,7 +37,6 @@ df_automobile = pd.read_csv("Automobile_data.csv")
 #Data Cleaning
 df_data = df_automobile.replace('?',np.NAN) 
 df_data.isnull().sum()
-
 #Missing Data
 df_temp = df_automobile[df_automobile['normalized-losses']!='?']
 normalised_mean = df_temp['normalized-losses'].astype(int).mean()
@@ -80,14 +79,12 @@ import seaborn as sns
 corr = df_automobile.corr()
 plt.figure(figsize=(20,9))
 a = sns.heatmap(corr, annot=True, fmt='.2f')
-
 #Bivariate Analysis
 plt.rcParams['figure.figsize']=(23,10)
 ax = sns.boxplot(x="make", y="price", data=df_automobile)
 
 plt.rcParams['figure.figsize']=(19,7)
 ax = sns.boxplot(x="body-style", y="price", data=df_automobile)
-
 #violin
 sns.catplot(data=df_automobile, x="num-of-cylinders", y="horsepower",kind="violin")
 #normalized losess
