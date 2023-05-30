@@ -37,6 +37,7 @@ df_automobile = pd.read_csv("Automobile_data.csv")
 #Data Cleaning
 df_data = df_automobile.replace('?',np.NAN) 
 df_data.isnull().sum()
+
 #Missing Data
 df_temp = df_automobile[df_automobile['normalized-losses']!='?']
 normalised_mean = df_temp['normalized-losses'].astype(int).mean()
@@ -66,6 +67,7 @@ df_automobile['stroke'] = df_automobile['stroke'].replace('?',normalised_mean).a
 df_automobile['num-of-doors'] = df_automobile['num-of-doors'].replace('?','four')
 df_automobile.head()
 
+
 #Summary statistics of variable
 df_automobile.describe()
 
@@ -85,8 +87,11 @@ ax = sns.boxplot(x="make", y="price", data=df_automobile)
 
 plt.rcParams['figure.figsize']=(19,7)
 ax = sns.boxplot(x="body-style", y="price", data=df_automobile)
+
 #violin
 sns.catplot(data=df_automobile, x="num-of-cylinders", y="horsepower",kind="violin")
+
+
 #normalized losess
 sns.catplot(data=df_automobile, y="normalized-losses", x="symboling" , hue="body-style" ,kind="point")
 ```
